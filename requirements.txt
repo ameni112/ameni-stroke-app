@@ -1,0 +1,4 @@
+flask[all]
+numpy
+sklearn
+gunicorn

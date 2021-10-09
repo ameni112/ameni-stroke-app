@@ -1,0 +1,10 @@
+sudo docker build -t ameni .
+sudo docker run -i -p 8000:8000 --name stroke ameni:latest
+#gitcommmands
+git commit -m "testing"
+
+git remote add github https://github.com/ameni-112/app-stroke.git
+
+git remote -v
+
+git push -f github master
