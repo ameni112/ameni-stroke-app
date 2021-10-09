@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -16,7 +16,7 @@ jobs:
             pytest --junitxml=test-reports/junit.xml --html=test-reports/pytes_report.tml --self-contained-html
       - store_test_results:
           path: test-reports
-      - store_test_atifacts:
+      - store_artifacts:
           path: test-reports          
   workflows:
     build_test:
