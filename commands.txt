@@ -3,7 +3,7 @@ sudo docker run -i -p 8000:8000 --name stroke ameni:latest
 #gitcommmands
 git commit -m "testing"
 
-git remote add github https://github.com/ameni-112/app-stroke.git
+git remote add github https://github.com/ameni112/ameni-stroke-app.git
 
 git remote -v
 

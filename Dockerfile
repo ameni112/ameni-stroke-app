@@ -1,6 +1,6 @@
 FROM python:3.7
 
-COPY ./app /docker-flask-test
+COPY ./app1 /docker-flask-test
 
 WORKDIR /docker-flask-test
 
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 
 # define the command to start the container
-CMD ["gunicorn","app:app", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn","app1:app1", "-b", "0.0.0.0:8000"]
