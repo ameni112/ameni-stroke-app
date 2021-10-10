@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  run_tests:
     docker:
       - image: circleci/python:3.7.4  # primary container for the build job
     steps:
@@ -18,7 +18,7 @@ jobs:
           path: test-reports
       - store_artifacts:
           path: test-reports          
-  workflows:
-    build_test:
-      jobs:
-        - run_tests
+workflows:
+  build_test:
+    jobs:
+      - run_tests
