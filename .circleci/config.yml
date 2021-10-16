@@ -7,11 +7,11 @@
       jobs:
         - run_tests
         - deploy:
-          requires:
-            - run_tests
-           filters:
-            branches:
-              only: master
+            requires:
+             - run_tests
+            filters:
+              branches:
+                sonly: master
            
  jobs:
   run_tests:
