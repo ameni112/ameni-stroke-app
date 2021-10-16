@@ -1,4 +1,4 @@
-from app import app
+from app.app import app
 import unittest
 class test(unittest.TestCase):
     def setUp(self):
