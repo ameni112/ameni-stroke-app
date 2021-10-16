@@ -1,10 +1,15 @@
 sudo docker build -t ameni .
 sudo docker run -i -p 8000:8000 --name stroke ameni:latest
 #gitcommmands
+git init
+git add .
+
 git commit -m "testing"
 
-git remote add github https://github.com/ameni112/ameni-stroke-app.git
+git remote add github https://github.com/ameni112/stroke.git
 
 git remote -v
 
 git push -f github master
+heroku create strokeapp
+git push heroku master

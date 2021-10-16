@@ -1,8 +1,8 @@
-from app.app  import app
+from app import app
 import unittest
 class test(unittest.TestCase):
     def setUp(self):
-        self.app=app1.app.test_client()
+        self.app=app.test_client()
         self.app.testing=True
     def test_status_code(self):
         response=self.app.get("/")
